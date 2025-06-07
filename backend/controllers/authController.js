@@ -1,7 +1,7 @@
 import User from "../models/user.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import { sendVerificationCode } from "../utils/mailer.js"; 
+import { sendVerificationCode } from "../Utils/mailer.js"; 
 
 export const register = async (req, res) => {
   try {
