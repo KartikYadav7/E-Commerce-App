@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 const app = express();
 connectDB();
 app.use(cors({
-    origin:["http://localhost:5173","https://e-commerce-app-backend-psi.vercel.app"],
+    origin:["http://localhost:5173","https://e-commerce-app-eight-ochre.vercel.app"],
     methods:["get","post","put","delete"],
     credentials:true,
 }
