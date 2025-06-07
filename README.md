@@ -1,4 +1,4 @@
-# E-Commerce Sign-up and Login Flow
+# E-Commerce App
 
 ## Overview
 
@@ -66,4 +66,58 @@ This project implements a simple sign-up and login flow for an e-commerce websit
    ```bash
    git clone https://github.com/KartikYadav7/E-Commerce-App.git
    cd Revispy
-   
+
+2. Install backend Dependencies:
+
+   ```bash
+   cd backend
+   npm install
+
+3. Install Frontend Dependencies:
+
+   ```bash
+   cd ../frontend
+   npm install
+
+ 4.Configure Environment Variables in your Backend:
+
+  ```bash
+    MONGO_URI=<your-mongodb-connection-string>
+    JWT_SECRET=<your-jwt-secret>
+    PORT=5000
+    EMAIL_USER =<Your Email>
+    EMAIL_PASS = <Your Email APP Password>
+```
+
+5.Seed the database with 100 categories using faker.js:
+
+```bash
+  cd ../backend
+  node seedCategories.js
+```
+
+6.Start the backend server:
+
+```bash
+npm run start
+```
+
+7.Start the frontend development server:
+
+```bash
+cd ../frontend
+npm run dev
+```
+
+8.Open your browser and navigate to:
+
+```bash
+https://localhost:5173
+```
+
+## Note:-
+
+SignUP with an existing email, a verification code will be sent to for verification. 
+
+
+
